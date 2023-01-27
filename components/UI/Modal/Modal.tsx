@@ -6,9 +6,9 @@ import {ModalFooter} from "@/components/UI/Modal/ModalFooter/ModalFooter";
 export const Modal = (props: ModalProps) => {
     return (
         <div>
-            <ModalHeader {...props.header} />
+            {props.header !== undefined ? <ModalHeader {...props.header} /> : ''}
             <ModalContent>{props.children}</ModalContent>
-            <ModalFooter {...props.footer} />
+            {props.footer !== undefined ? <ModalFooter {...props.footer} /> : ''}
         </div>
     )
 }

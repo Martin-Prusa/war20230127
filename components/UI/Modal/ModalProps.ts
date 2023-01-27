@@ -3,7 +3,7 @@ import {ModalFooterProps} from "@/components/UI/Modal/ModalFooter/ModalFooterPro
 import {ReactNode} from "react";
 
 export interface ModalProps {
-    header: ModalHeaderProps
+    header?: ModalHeaderProps
     children: ReactNode
-    footer: ModalFooterProps
+    footer?: ModalFooterProps
 }
